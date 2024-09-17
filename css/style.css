@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 248);
+}
+.title{
+    padding: 15px;
+    padding-left: 18px;
+    background-color: rgb(30, 30, 250);
+    color: white;
+    width: 980px;
+    margin: 20px auto;
+    border-radius: 13px;
+    font-weight: 400;
+}
+
+.searchbox{
+    width: 980px;
+    margin: 50px auto;
+}
+.searchbox input{
+    font-size: 1rem;
+    border-color:rgb(30, 30, 250) ;
+    outline:none;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background:none;
+    /* margin: 40px 0px; */
+}
+.searchPrice-btn{
+    background-color: rgb(30, 30, 250);
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    border-radius: 5px;  
+    margin-left: 15px;
+}
+
+.categury{
+    padding: 5px;
+    display: inline-block;
+    margin: 40px 0px;
+    margin-right: 8px;
+    width: 90px;
+    border: 2px solid rgb(30, 30, 250);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.categurySelected{
+    background-color: rgb(30, 30,250);
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    margin: 40px 0px;
+    margin-right: 8px;
+    width: 90px;
+    border: 2px solid rgb(30, 30, 250);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.products{
+    width: 980px;
+    margin:20px auto;
+    display: grid;
+    row-gap: 70px;
+    column-gap: 90px;
+    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(350px,1fr));
+    
+}
+.product{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 10px 23px rgb(206, 202, 202);
+}
+
+.products img{
+    background-color: blue;
+    width:220px;
+    height: 220px;
+    margin: 12px;
+    /* padding: 12px 5px; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.products div{
+    margin-left: 20px;
+    margin-top: 8px;
+    
+}
+.products span{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: rgb(30, 30,250);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.exist{
+    color: rgb(30, 30,250);
+    font-size: 1.5rem;
+}
+@media (max-width:1100px){
+    
+    .title{
+        width: auto;
+        margin: 20px 30px;
+    }
+    .searchbox{
+        width: auto;
+        margin: 50px 30px;
+    }
+    .products{
+        width: auto;
+        margin:20px 30px;
+        row-gap: 50px;
+        column-gap: 30px;
+        grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+        grid-template-rows: repeat(1,330px);
+        justify-content: center;
+                
+    }
+    .products img{
+        width:90%;
+        height: 200px;
+        margin:12px ;
+    }
+}
+@media (max-width:768px) {
+    .title{
+        font-size: 1.2rem;
+    }
+  
+    .products{
+        column-gap: 10px;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-template-rows: repeat(1,330px);
+        justify-content: center;
+                
+    }
+
+}
+@media (max-width:480px){
+    .title{
+        font-size: 0.95rem;
+    }
+    .searchbox{
+        width: auto;
+        margin: 50px 30px;
+    }
+    .products{
+        width: auto;
+        margin:20px 30px;
+        row-gap: 50px;
+        column-gap: 50px;
+        grid-template-columns: repeat(1,250px);
+        grid-template-rows: repeat(1,300px);
+        justify-content: center;
+                
+    }
+    .products img{
+        width:205px;
+        height: 180px;
+        margin:12px ;
+        justify-content: center;
+  
+    }
+    .categury{
+        width: 70px;
+        font-size: 0.9rem;
+        padding: 5px 3px;
+        margin-top: 0px;
+    }
+    .categurySelected{
+        width: 70px;
+        font-size: 0.9rem;
+        padding: 5px 3px;
+    
+    }
+    .searchbox input{
+        font-size: 0.9rem;
+        width: 180px;
+        margin-right: 10px;
+    }
+    .search-input{
+        margin-bottom: 50px;
+    }
+    .searchPrice-btn{
+        font-size: 0.85rem;
+        padding: 5px 8px;
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 60px;
+    }
+    
+}
